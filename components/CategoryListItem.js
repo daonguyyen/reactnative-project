@@ -4,9 +4,10 @@ import ssiLogo from './../assets/images/baoviet.png'
 
 export default class CategoryListItem extends Component {
     render() {
+        const {category} = this.props;
         return (
             <View style={styles.container}>
-                <Text style={styles.title}> CategoryListItem </Text>
+                <Text style={styles.title}> {category.name} </Text>
                 <Image source={ssiLogo} />
             </View>
         )
